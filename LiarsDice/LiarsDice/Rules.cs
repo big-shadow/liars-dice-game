@@ -8,7 +8,7 @@
         Impossible = 4
     }
 
-    internal static class Rules
+    public static class Rules
     {
         public const int DicePerPlayer = 6;
         public const int MaxPlayers = 3;

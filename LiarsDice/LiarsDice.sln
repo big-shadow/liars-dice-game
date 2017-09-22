@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiarsDiceGUI", "LiarsDiceGUI\LiarsDiceGUI.csproj", "{E6E08FD5-A31F-44EC-AD5A-D75EFE0F9E3D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiarsDiceConsoleGUI", "LiarsDiceGUI\LiarsDiceConsoleGUI.csproj", "{E6E08FD5-A31F-44EC-AD5A-D75EFE0F9E3D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiarsDice", "LiarsDice\LiarsDice.csproj", "{EF3C0754-9A55-48CC-B541-081E1D13AB4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiarsDiceUnitTests", "LiarsDiceUnitTests\LiarsDiceUnitTests.csproj", "{5D585FAA-8E97-4780-8C39-2CF209EBDBD4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{EF3C0754-9A55-48CC-B541-081E1D13AB4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF3C0754-9A55-48CC-B541-081E1D13AB4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF3C0754-9A55-48CC-B541-081E1D13AB4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D585FAA-8E97-4780-8C39-2CF209EBDBD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D585FAA-8E97-4780-8C39-2CF209EBDBD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D585FAA-8E97-4780-8C39-2CF209EBDBD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D585FAA-8E97-4780-8C39-2CF209EBDBD4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

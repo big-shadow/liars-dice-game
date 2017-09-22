@@ -1,8 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using LiarsDice.UIInterface;
+using System.Collections.Generic;
+using System.Linq;
 
-namespace LiarsDice
+namespace LiarsDice.PlayerTypes
 {
-    internal class Player
+    public abstract class Player
     {
         private List<Die> _dice;
 
@@ -11,17 +13,22 @@ namespace LiarsDice
             get { return _dice.Count; }
         }
 
+        public List<Die> Dice
+        {
+            get
+            {
+                return _dice;
+            }
+        }
+
         public Player()
         {
-            _dice = new List<Die>();
+            ResetDice();
         }
 
         public void ResetDice()
         {
-            for (int d = 1; d >= Rules.DicePerPlayer; d++)
-            {
-                _dice.Add(new Die());
-            }
+            _dice = Enumerable.Range(0, Rules.DicePerPlayer).Select(i => new Die()).ToList();
         }
 
         public void RollDice()
@@ -36,5 +43,7 @@ namespace LiarsDice
         {
             _dice.RemoveAt(0);
         }
+
+        public abstract void Turn(Bet bet, UI ui);
     }
 }

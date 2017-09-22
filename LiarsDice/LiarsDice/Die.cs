@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace LiarsDice
+﻿namespace LiarsDice
 {
-    internal enum DieFace
+    public enum DieFace
     {
         One = 1,
         Two = 2,
@@ -12,7 +10,7 @@ namespace LiarsDice
         Six = 6
     }
 
-    internal class Die
+    public class Die
     {
         private DieFace _dieFace;
 
@@ -23,7 +21,7 @@ namespace LiarsDice
 
         public void Roll()
         {
-            _dieFace = (DieFace)new Random().Next(1, 7);
+            _dieFace = (DieFace)RandomNumber.Between(1, 6);
         }
     }
 }
